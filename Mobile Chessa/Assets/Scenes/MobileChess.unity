@@ -164,6 +164,19 @@ MonoBehaviour:
     type: 3}
   Black_Rook: {fileID: 6246789315826367033, guid: 24cb03c82f95eca42b65b58738cde15f,
     type: 3}
+  White_Paw: {fileID: 6246789315826367033, guid: 82d27271f864f0340ac63e6445b68d34,
+    type: 3}
+  White_Bishop: {fileID: 6246789315826367033, guid: 0b37edcf4d8d32248a3adbf5464db867,
+    type: 3}
+  White_Knight: {fileID: 6246789315826367033, guid: 06b47001dd136f74dbaefc60af4b9283,
+    type: 3}
+  White_King: {fileID: 6246789315826367033, guid: 75a437dc0444e4e49b4099977a387e31,
+    type: 3}
+  White_Queen: {fileID: 6246789315826367033, guid: a6bbf3a4efcc77e4fa988e44a2882a3e,
+    type: 3}
+  White_Rook: {fileID: 6246789315826367033, guid: f7654e971ed2ab84c92499f20cfe2ca4,
+    type: 3}
+  canvas: {fileID: 1183763544}
 --- !u!4 &49868025
 Transform:
   m_ObjectHideFlags: 0
