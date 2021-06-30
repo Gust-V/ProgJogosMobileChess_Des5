@@ -10,7 +10,7 @@ public class BlackPawn : BlackPiece
         PieceName = "black_pawn";
         this.name = PieceName;
         yBoard = 6;
-        Mp.namePiece = PieceName;
+        //Mp.namePiece = PieceName;
     }
 
     protected override void InitiateMovePlates()

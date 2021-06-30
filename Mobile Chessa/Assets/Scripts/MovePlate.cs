@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovePlate : MonoBehaviour
 {
+    //NÃO ESTA FUNCIONANDO
     public GameObject controller;
     GameObject reference = null;
 
@@ -33,8 +34,8 @@ public class MovePlate : MonoBehaviour
             Destroy(cp);
         }
 
-        controller.GetComponent<GameController>().SetPositionEmpty(reference.GetComponent<ScriptableObject>().GetXBoard(), 
-            reference.GetComponent<Chessman>().GetYBoard());
+        controller.GetComponent<GameController>().SetPositionEmpty(reference.GetComponent<Chessman>().GetXBoard(),
+             reference.GetComponent<Chessman>().GetYBoard());
 
         //Move a peça de referência para esta posição
         reference.GetComponent<Chessman>().SetXBoard(matrixX);

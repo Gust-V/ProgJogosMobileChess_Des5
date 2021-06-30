@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BlackPiece : Chessman
 {
-    public MovePlate Mp;
+    //public MovePlate Mp;
     protected virtual void Awake()
     {
         player = "black";

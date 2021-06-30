@@ -10,7 +10,7 @@ public class WhiteKnight : WhitePiece
         PieceName = "white_knight";
         this.name = PieceName;
         yBoard = 0;
-        Mp.namePiece = PieceName;
+        //Mp.namePiece = PieceName;
     }
 
     protected override void InitiateMovePlates()

@@ -10,7 +10,7 @@ public class BlackRook : BlackPiece
         PieceName = "black_rook";
         this.name = PieceName;
         yBoard = 7;
-        Mp.namePiece = PieceName;
+        //Mp.namePiece = PieceName;
     }
 
     protected override void InitiateMovePlates()

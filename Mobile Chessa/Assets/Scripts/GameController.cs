@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour
     public GameObject White_Queen;
     public GameObject White_Rook;
 
+    public Transform canvas;
+
 
     //Cria a matriz. Posições e equipe de cada peça de xadrez
     private GameObject[,] positions = new GameObject[8, 8];
@@ -203,7 +205,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateBkP(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj = Instantiate(Black_Paw, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj.transform.SetParent(canvas);
         BlackPawn BkP = obj.GetComponent<BlackPawn>();
     
         BkP.SetXBoard(x);
@@ -214,7 +216,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateBkB(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj1 = Instantiate(Black_Bishop, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj1.transform.SetParent(canvas);
         BlackBishop BkB = obj1.GetComponent<BlackBishop>();
 
         BkB.SetXBoard(x);
@@ -225,7 +227,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateBkKing(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj2 = Instantiate(Black_King, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj2.transform.SetParent(canvas);
         BlackKing BkKing = obj2.GetComponent<BlackKing>();
 
         BkKing.SetXBoard(x);
@@ -236,7 +238,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateBkKnt(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj2 = Instantiate(Black_Knight, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj2.transform.SetParent(canvas);
         BlackKnight BkKnt = obj2.GetComponent<BlackKnight>();
 
         BkKnt.SetXBoard(x);
@@ -247,7 +249,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateBkQ(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj2 = Instantiate(Black_Queen, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj2.transform.SetParent(canvas);
         BlackQueen BkQ = obj2.GetComponent<BlackQueen>();
 
         BkQ.SetXBoard(x);
@@ -258,7 +260,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateBkR(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj2 = Instantiate(Black_Rook, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj2.transform.SetParent(canvas);
         BlackRook BkKnt = obj2.GetComponent<BlackRook>();
 
         BkKnt.SetXBoard(x);
@@ -270,7 +272,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateWtP(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj = Instantiate(White_Paw, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj.transform.SetParent(canvas);
         WhitePawn WtP = obj.GetComponent<WhitePawn>();
 
         WtP.SetXBoard(x);
@@ -281,7 +283,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateWtB(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj1 = Instantiate(White_Bishop, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj1.transform.SetParent(canvas);
         WhiteBishop WtB = obj1.GetComponent<WhiteBishop>();
 
         WtB.SetXBoard(x);
@@ -292,7 +294,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateWtKing(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj2 = Instantiate(White_King, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj2.transform.SetParent(canvas);
         WhiteKing WtKing = obj2.GetComponent<WhiteKing>();
 
         WtKing.SetXBoard(x);
@@ -303,7 +305,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateWtKnt(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj2 = Instantiate(White_Knight, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj2.transform.SetParent(canvas);
         WhiteKnight WtKnt = obj2.GetComponent<WhiteKnight>();
 
         WtKnt.SetXBoard(x);
@@ -314,7 +316,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateWtQ(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj2 = Instantiate(White_Queen, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj2.transform.SetParent(canvas);
         WhiteQueen WtQ = obj2.GetComponent<WhiteQueen>();
 
         WtQ.SetXBoard(x);
@@ -325,7 +327,7 @@ public class GameController : MonoBehaviour
     public GameObject CreateWtR(int x) //Cria as peças nos lugares especificados acima e instancia
     {
         GameObject obj2 = Instantiate(Black_Rook, new Vector3(0, 0, -1), Quaternion.identity);
-
+        obj2.transform.SetParent(canvas);
         WhiteRook WtKnt = obj2.GetComponent<WhiteRook>();
 
         WtKnt.SetXBoard(x);

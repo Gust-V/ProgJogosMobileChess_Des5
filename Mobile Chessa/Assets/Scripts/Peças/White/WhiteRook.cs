@@ -10,7 +10,7 @@ public class WhiteRook : WhitePiece
         PieceName = "White_rook";
         this.name = PieceName;
         yBoard = 0;
-        Mp.namePiece = PieceName;
+        //Mp.namePiece = PieceName;
     }
 
     protected override void InitiateMovePlates()
